@@ -370,37 +370,37 @@
     <script>
         // --- INITIAL DATA & SAMPLES ---
         const SAMPLE_DISHES = [
-            "1. Cá lóc kho tộ - Canh chua cá lóc - Rau muống luộc",
-            "2. Thịt kho trứng - Canh bí xanh nấu tôm - Dưa giá",
-            "3. Gà rang lá chanh - Canh cải ngọt nấu thịt bằm - Đậu phụ lướt ván",
-            "4. Sườn xào chua ngọt - Canh rau ngót nấu mọc - Thiên lý xào tỏi",
-            "5. Tôm rim mặn ngọt - Canh bầu nấu tôm - Rau bí xào tỏi",
-            "6. Bò xào cần tỏi - Canh khoai mỡ - Trứng chiên hành hoa",
-            "7. Lẩu gà lá giang hoặc Bún đậu mắm tôm",
-            "8. Thịt luộc chấm mắm tôm/mắm nêm - Canh rau muống dầm sấu - Cà pháo",
-            "9. Cá thu sốt cà chua - Canh khổ qua rừng thịt bằm - Đậu que xào",
-            "10. Mực xào thập cẩm - Canh rong biển thịt bò - Trứng hấp ngũ sắc",
-            "11. Chả lá lốt - Canh cua rau mồng tơi - Cà pháo muối xổi",
-            "12. Đùi gà chiên nước mắm - Canh xà lách xoong - Măng tây xào tỏi",
-            "13. Thịt bò kho gừng - Canh bắp cải nấu tôm - Salad dưa chuột",
-            "14. Phở bò hoặc Bún chả Hà Nội",
-            "15. Đậu hũ nhồi thịt sốt cà chua - Canh hẹ nấu đậu hũ - Giá đỗ xào",
-            "16. Cá rô phi chiên xù - Canh cải bẹ xanh gừng - Rau củ quả luộc kho quẹt",
-            "17. Thịt ba chỉ rang cháy cạnh - Canh khoai tây cà rốt xương - Bông cải xanh xào",
-            "18. Tôm băm rang tỏi - Canh chua dọc mùng - Mướp xào lòng gà",
-            "19. Cánh gà mật ong - Canh bí đỏ thịt bằm - Rau dền luộc",
-            "20. Bò lúc lắc - Khoai tây chiên - Canh súp rau củ",
-            "21. Bánh xèo miền Tây hoặc Bún riêu cua",
-            "22. Cá lăng kho tộ - Canh măng chua - Rau sống",
-            "23. Trứng cuộn thịt băm - Canh rau cải cúc - Đậu bắp luộc chao",
-            "24. Sườn non kho tiêu - Canh cà chua trứng - Su su xào tỏi",
-            "25. Gà kho sả ớt - Canh bí đao nấu sườn - Salad cà chua bi",
-            "26. Mắm chưng thịt trứng - Canh kiểm (miền Tây) - Rau luộc thập cẩm",
-            "27. Bò xào đậu rồng - Canh rong biển - Đậu phụ chiên giòn",
-            "28. Thịt kho măng - Canh cải thảo nấu tôm - Dưa cải chua",
-            "29. Cá diêu hồng hấp xì dầu - Canh khoai lang - Rau muống xào",
-            "30. Bò nhúng giấm hoặc Lẩu hải sản",
-            "31. Gà xào sả ớt"
+            "Cá lóc kho tộ - Canh chua cá lóc - Rau muống luộc",
+            "Thịt kho trứng - Canh bí xanh nấu tôm - Dưa giá",
+            "Gà rang lá chanh - Canh cải ngọt nấu thịt bằm - Đậu phụ lướt ván",
+            "Sườn xào chua ngọt - Canh rau ngót nấu mọc - Thiên lý xào tỏi",
+            "Tôm rim mặn ngọt - Canh bầu nấu tôm - Rau bí xào tỏi",
+            "Bò xào cần tỏi - Canh khoai mỡ - Trứng chiên hành hoa",
+            "Lẩu gà lá giang hoặc Bún đậu mắm tôm",
+            "Thịt luộc chấm mắm tôm/mắm nêm - Canh rau muống dầm sấu - Cà pháo",
+            "Cá thu sốt cà chua - Canh khổ qua rừng thịt bằm - Đậu que xào",
+            "Mực xào thập cẩm - Canh rong biển thịt bò - Trứng hấp ngũ sắc",
+            "Chả lá lốt - Canh cua rau mồng tơi - Cà pháo muối xổi",
+            "Đùi gà chiên nước mắm - Canh xà lách xoong - Măng tây xào tỏi",
+            "Thịt bò kho gừng - Canh bắp cải nấu tôm - Salad dưa chuột",
+            "Phở bò hoặc Bún chả Hà Nội",
+            "Đậu hũ nhồi thịt sốt cà chua - Canh hẹ nấu đậu hũ - Giá đỗ xào",
+            "Cá rô phi chiên xù - Canh cải bẹ xanh gừng - Rau củ quả luộc kho quẹt",
+            "Thịt ba chỉ rang cháy cạnh - Canh khoai tây cà rốt xương - Bông cải xanh xào",
+            "Tôm băm rang tỏi - Canh chua dọc mùng - Mướp xào lòng gà",
+            "Cánh gà mật ong - Canh bí đỏ thịt bằm - Rau dền luộc",
+            "Bò lúc lắc - Khoai tây chiên - Canh súp rau củ",
+            "Bánh xèo miền Tây hoặc Bún riêu cua",
+            "Cá lăng kho tộ - Canh măng chua - Rau sống",
+            "Trứng cuộn thịt băm - Canh rau cải cúc - Đậu bắp luộc chao",
+            "Sườn non kho tiêu - Canh cà chua trứng - Su su xào tỏi",
+            "Gà kho sả ớt - Canh bí đao nấu sườn - Salad cà chua bi",
+            "Mắm chưng thịt trứng - Canh kiểm (miền Tây) - Rau luộc thập cẩm",
+            "Bò xào đậu rồng - Canh rong biển - Đậu phụ chiên giòn",
+            "Thịt kho măng - Canh cải thảo nấu tôm - Dưa cải chua",
+            "Cá diêu hồng hấp xì dầu - Canh khoai lang - Rau muống xào",
+            "Bò nhúng giấm hoặc Lẩu hải sản",
+            "Gà xào sả ớt"
         ];
 
         // State variables
@@ -425,12 +425,19 @@
 
         // --- LOCAL STORAGE & INIT ---
         function loadData() {
-            const savedDishes = localStorage.getItem('meal_planner_dishes_v2');
-            const savedSchedules = localStorage.getItem('meal_planner_schedules_v2');
+            const savedDishes = localStorage.getItem('meal_planner_dishes_v3');
+            const savedSchedules = localStorage.getItem('meal_planner_schedules_v3');
 
             if (savedDishes) {
-                try { dishes = JSON.parse(savedDishes); } catch (e) { dishes = []; }
-            } else {
+                try { 
+                    dishes = JSON.parse(savedDishes); 
+                } catch (e) { 
+                    dishes = []; 
+                }
+            }
+
+            // If dishes is empty or malformed on mobile, fallback to sample dishes immediately
+            if (!dishes || dishes.length === 0) {
                 dishes = SAMPLE_DISHES.map((name, idx) => ({ id: 'dish_' + Date.now() + '_' + idx, name }));
                 saveDishes();
             }
@@ -445,7 +452,12 @@
         }
 
         function saveDishes() {
-            localStorage.setItem('meal_planner_dishes_v2', JSON.stringify(dishes));
+            localStorage.setItem('meal_planner_dishes_v3', JSON.stringify(dishes));
+            updateBadgesAndWarnings();
+        }
+
+        function saveSchedules() {
+            localStorage.setItem('meal_planner_schedules_v3', JSON.stringify(schedulesByMonth));
             updateBadgesAndWarnings();
         }
 
